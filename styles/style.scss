@@ -1,22 +1,22 @@
+@import 'vars';
+
 .card-container {
     text-align: center;
-    text-transform: uppercase;
-    color: white;
+    color: $dark-blue;
     font-size: 16px;
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    float: left;
   }
   .card {
     flex: 1 0 20%;
-    border: 1px solid #111;
-    background: #0000CD;
+    background: $light-grey-blue;
     padding: 10px;
     margin: 10px;
     margin-bottom: 50px;
-    
-    &:nth-child(odd) {
-      background: #191970;
-    }  
+    border-radius: 3px;
     
     &:nth-child(-n+4) {
       font-size: 20px;
@@ -28,6 +28,43 @@
       margin-bottom: 5px;
       height: 75px;
     }
+    //colour borders
+
+    &:nth-child(1) {
+        border-top: 5px solid $colour-fb;
+    }
+    &:nth-child(2) {
+        border-top: 5px solid $colour-twitter;
+    }
+    &:nth-child(3) {
+        border-top: 5px solid transparent;
+        border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+        border-image-slice: 1;
+    }
+    &:nth-child(4) {
+        border-top: 5px solid $colour-ytb;
+    }
+  }
+  .social-followers {
+    text-align: center;
+    letter-spacing: 2px
+  }
+  .social-icon {
+      margin-right: 5px;
+    
+  }
+  .social-handle {
+    font-size: 12px;
+    font-weight: 700;
+
+  }
+  .social-follower-number {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .social-update {
+      font-size: 14px;
   }
   h2 {
     text-align: left;

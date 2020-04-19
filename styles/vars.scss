@@ -9,13 +9,13 @@ $screen-lg: 1440px;
 
     $colour-fb: hsl(195, 100%, 50%);
     $colour-twitter: hsl(203, 89%, 53%);
-    $colour-insta: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    // $colour-insta: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     $colour-ytb: hsl(348, 97%, 39%);
 
     //Dark Theme
     $colour-toggle-d: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
     //Light Theme
-    $colour-toggle-l: hsl(230, 22%, 74%)
+    $colour-toggle-l: hsl(230, 22%, 74%);
 
 // ### Neutral
 
@@ -29,8 +29,9 @@ $screen-lg: 1440px;
 
 // #### Light Theme
 
-// - White (BG): hsl(0, 0%, 100%)
-// - Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
-// - Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
-// - Dark Grayish Blue (Text): hsl(228, 12%, 44%)
-// - Very Dark Blue (Text): hsl(230, 17%, 14%)
+$white: hsl(0, 0%, 100%);
+$pale-blue: hsl(225, 100%, 98%);
+$light-grey-blue: hsl(227, 47%, 96%);
+$dark-grey-blue: hsl(228, 12%, 44%);
+$dark-blue: hsl(230, 17%, 14%);
+

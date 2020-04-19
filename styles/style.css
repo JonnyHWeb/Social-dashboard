@@ -1,28 +1,26 @@
 .card-container {
   text-align: center;
-  text-transform: uppercase;
-  color: white;
+  color: #1e202a;
   font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  float: left;
 }
 
 .card {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 20%;
           flex: 1 0 20%;
-  border: 1px solid #111;
-  background: #0000CD;
+  background: #f0f2fa;
   padding: 10px;
   margin: 10px;
   margin-bottom: 50px;
-}
-
-.card:nth-child(odd) {
-  background: #191970;
+  border-radius: 3px;
 }
 
 .card:nth-child(-n+4) {
@@ -34,6 +32,50 @@
   text-align: left;
   margin-bottom: 5px;
   height: 75px;
+}
+
+.card:nth-child(1) {
+  border-top: 5px solid deepskyblue;
+}
+
+.card:nth-child(2) {
+  border-top: 5px solid #1ca0f2;
+}
+
+.card:nth-child(3) {
+  border-top: 5px solid transparent;
+  -o-border-image: linear-gradient(to right, #fdc468, #df4996);
+     border-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+     border-image: linear-gradient(to right, #fdc468, #df4996);
+  border-image-slice: 1;
+}
+
+.card:nth-child(4) {
+  border-top: 5px solid #c4032a;
+}
+
+.social-followers {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.social-icon {
+  margin-right: 5px;
+}
+
+.social-handle {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.social-follower-number {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.social-update {
+  font-size: 14px;
 }
 
 h2 {
