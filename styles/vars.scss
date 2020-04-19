@@ -1,0 +1,36 @@
+//breakpoints
+$screen-sm: 375px;
+$screen-lg: 1440px;
+
+//Colours
+    //Primary
+    $pcolour-1: hsl(163, 72%, 41%);
+    $pcolour-2: hsl(356, 69%, 56%);
+
+    $colour-fb: hsl(195, 100%, 50%);
+    $colour-twitter: hsl(203, 89%, 53%);
+    $colour-insta: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    $colour-ytb: hsl(348, 97%, 39%);
+
+    //Dark Theme
+    $colour-toggle-d: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    //Light Theme
+    $colour-toggle-l: hsl(230, 22%, 74%)
+
+// ### Neutral
+
+// #### Dark Theme
+
+// - Very Dark Blue (BG): hsl(230, 17%, 14%)
+// - Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
+// - Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
+// - Desaturated Blue (Text): hsl(228, 34%, 66%)
+// - White (Text): hsl(0, 0%, 100%)
+
+// #### Light Theme
+
+// - White (BG): hsl(0, 0%, 100%)
+// - Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
+// - Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
+// - Dark Grayish Blue (Text): hsl(228, 12%, 44%)
+// - Very Dark Blue (Text): hsl(230, 17%, 14%)
