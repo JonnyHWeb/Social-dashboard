@@ -1,0 +1,46 @@
+.card-container {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+  border: 1px solid #111;
+  background: #0000CD;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+.card:nth-child(odd) {
+  background: #191970;
+}
+
+.card:nth-child(-n+4) {
+  font-size: 20px;
+  height: 150px;
+}
+
+.card:nth-child(n+5) {
+  text-align: left;
+  margin-bottom: 5px;
+  height: 75px;
+}
+
+h2 {
+  text-align: left;
+  color: black;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+.card-container {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    flex: 1 0 20%;
+    border: 1px solid #111;
+    background: #0000CD;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 50px;
+    
+    &:nth-child(odd) {
+      background: #191970;
+    }  
+    
+    &:nth-child(-n+4) {
+      font-size: 20px;
+      height: 150px;
+      
+    }
+    &:nth-child(n+5) {
+      text-align: left;
+      margin-bottom: 5px;
+      height: 75px;
+    }
+  }
+  h2 {
+    text-align: left;
+    color: black;
+    flex: 0 0 100%;
+  }
