@@ -7,7 +7,6 @@ header {
 
 .card-container {
     text-align: center;
-    color: $dark-blue;
     font-size: 16px;
     display: flex;
     flex-wrap: wrap;
@@ -65,8 +64,10 @@ header {
   }
   .social-followers {
     text-align: center;
-    letter-spacing: 2px;
     color: $dark-grey-blue;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
   }
   .social-icon {
       margin-right: 5px;    
@@ -77,9 +78,10 @@ header {
   }
   .social-follower-number {
     display: block;
-    font-size: 30px;
+    font-size: 46px;
     font-weight: 700;
     color: black;
+    letter-spacing: 0;
   }
   .social-update {
       font-size: 14px;
@@ -168,9 +170,19 @@ header {
 
   
 .card-container__dark {
-
-}
-
-.card__dark {
   background: $dark-blue;
+  .card {
+    background: $desaturated-blue;
+  }
+  .social-followers {
+    
+  }
+  .social-follower-number {
+    color: white;
+  }
+  h2,
+  h3,
+  .social-count {
+    color: white;
+  }
 }

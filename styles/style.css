@@ -5,7 +5,6 @@ header {
 
 .card-container {
   text-align: center;
-  color: #1e202a;
   font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,8 +74,10 @@ header {
 
 .social-followers {
   text-align: center;
-  letter-spacing: 2px;
   color: #63687e;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
 }
 
 .social-icon {
@@ -90,9 +91,10 @@ header {
 
 .social-follower-number {
   display: block;
-  font-size: 30px;
+  font-size: 46px;
   font-weight: 700;
   color: black;
+  letter-spacing: 0;
 }
 
 .social-update {
@@ -180,7 +182,21 @@ input:focus + .slider {
   margin-right: 20px;
 }
 
-.card__dark {
+.card-container__dark {
   background: #1e202a;
+}
+
+.card-container__dark .card {
+  background: #252a41;
+}
+
+.card-container__dark .social-follower-number {
+  color: white;
+}
+
+.card-container__dark h2,
+.card-container__dark h3,
+.card-container__dark .social-count {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
