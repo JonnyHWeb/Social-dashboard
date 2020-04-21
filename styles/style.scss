@@ -1,35 +1,36 @@
 @import 'vars';
 
 header {
-  position: relative;
-  margin: 0 115px;
+  flex: 0 0 100%;
+  margin: 0 15px;
 }
 
-.card-container {
-    text-align: center;
-    font-size: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    float: left;
-    margin: 0 100px 0 100px;
+.container {
+  position: relative;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  float: left;
+  padding: 50px 100px; 
   }
   .card {
     position: relative;
-    flex: 1 0 20%;
+    flex: 1 0 18%;
     background: $light-grey-blue;
     padding: 10px;
     margin: 15px;
     margin-bottom: 40px;
     border-radius: 5px;
-    
-    &:nth-child(-n+4) {
+    text-align: center;
+
+
+    &:nth-child(n+1):nth-child(-n+5) {
       font-size: 20px;
-      height: 170px;
-      
+      height: 170px;    
     }
-    &:nth-child(n+5) {
+    &:nth-child(n+6) {
       text-align: left;
       margin-bottom: 5px;
       height: 120px;
@@ -47,19 +48,22 @@ header {
     }
     //colour borders
 
-    &:nth-child(1) {
+    &:nth-child(2) {
         border-top: 5px solid $colour-fb;
     }
-    &:nth-child(2) {
+    &:nth-child(3) {
         border-top: 5px solid $colour-twitter;
     }
-    &:nth-child(3) {
+    &:nth-child(4) {
         border-top: 5px solid transparent;
         border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
         border-image-slice: 1;
     }
-    &:nth-child(4) {
+    &:nth-child(5) {
         border-top: 5px solid $colour-ytb;
+    }
+    @media (max-width: $screen-lg){
+      flex: 0 0 100%;
     }
   }
   .social-followers {
@@ -87,6 +91,7 @@ header {
       font-size: 14px;
   }
   h2 {
+    margin: 0 15px;
     color: $dark-grey-blue;
     text-align: left;
     color: black;
@@ -102,13 +107,24 @@ header {
   }
 
   //slider toggle
-
+  .toggle-label {
+    position: absolute;
+    right: 220px;
+    top: 80px;
+  }
+  .dark-mode {
+    position: relative;
+    font-size: 20px;
+    top: 10px;
+    margin-right: 20px;
+  }
   .switch {
     position: absolute;
-    right: 0;
-    top: 18px;
-    width: 60px;
-    height: 34px;
+    right: 150px;
+    top: 80px;
+    display: inline-block;
+    width: 56px;
+    height: 26px;
   }
   
   .switch input { 
@@ -125,7 +141,7 @@ header {
     right: 0;
     bottom: 0;
     border-radius: 34px;
-    background: hsl(230, 22%, 74%);
+    background: linear-gradient(to right,  hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     -webkit-transition: .6s;
     transition: .6s;
     
@@ -133,24 +149,23 @@ header {
       border-radius: 50%;
       position: absolute;
       content: "";
-      height: 26px;
-      width: 26px;
-      left: 4px;
+      height: 20px;
+      width: 20px;
+      left: 5px;
       bottom: 4px;
-      background-color: white;
+      background-color: hsl(230, 17%, 14%);
       -webkit-transition: .6s;
       transition: .6s;
     }
   }
   
   input:checked + .slider {
-    background: linear-gradient(to right,  hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-    
-    
+   
     &::before {
       -webkit-transform: translateX(26px);
       -ms-transform: translateX(26px);
       transform: translateX(26px);
+      background-color: hsl(230, 22%, 74%);
     }
   }
   
@@ -158,18 +173,11 @@ header {
     box-shadow: 0 0 1px #2196F3;
   }
   
-  .dark-mode {
-    position: relative;
-    font-size: 20px;
-    top: 10px;
-    margin-right: 20px;
-  }
-  
   //dark-mode
 
 
   
-.card-container__dark {
+.container__dark {
   background: $dark-blue;
   .card {
     background: $desaturated-blue;
@@ -180,9 +188,30 @@ header {
   .social-follower-number {
     color: white;
   }
+  h1,
   h2,
   h3,
+  p,
   .social-count {
     color: white;
   }
+
 }
+.icon {
+  display: none;
+  position: relative;
+  top: -2px;
+}
+
+// number updater icon
+.social-update__positive {
+  .icon__up {
+    display: inline-block;
+  }
+}
+.social-update__negative {
+  .icon__down {
+    display: inline-block;
+  }
+}
+

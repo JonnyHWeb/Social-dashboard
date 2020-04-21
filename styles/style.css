@@ -1,10 +1,12 @@
 header {
-  position: relative;
-  margin: 0 115px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  margin: 0 15px;
 }
 
-.card-container {
-  text-align: center;
+.container {
+  position: relative;
   font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,53 +16,54 @@ header {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   float: left;
-  margin: 0 100px 0 100px;
+  padding: 50px 100px;
 }
 
 .card {
   position: relative;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 20%;
-          flex: 1 0 20%;
+      -ms-flex: 1 0 18%;
+          flex: 1 0 18%;
   background: #f0f2fa;
   padding: 10px;
   margin: 15px;
   margin-bottom: 40px;
   border-radius: 5px;
+  text-align: center;
 }
 
-.card:nth-child(-n+4) {
+.card:nth-child(n+1):nth-child(-n+5) {
   font-size: 20px;
   height: 170px;
 }
 
-.card:nth-child(n+5) {
+.card:nth-child(n+6) {
   text-align: left;
   margin-bottom: 5px;
   height: 120px;
 }
 
-.card:nth-child(n+5) .social-icon {
+.card:nth-child(n+6) .social-icon {
   position: absolute;
   top: 20%;
   right: 10%;
 }
 
-.card:nth-child(n+5) .social-update {
+.card:nth-child(n+6) .social-update {
   position: absolute;
   right: 10%;
   bottom: 0;
 }
 
-.card:nth-child(1) {
+.card:nth-child(2) {
   border-top: 5px solid deepskyblue;
 }
 
-.card:nth-child(2) {
+.card:nth-child(3) {
   border-top: 5px solid #1ca0f2;
 }
 
-.card:nth-child(3) {
+.card:nth-child(4) {
   border-top: 5px solid transparent;
   -o-border-image: linear-gradient(to right, #fdc468, #df4996);
      border-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
@@ -68,8 +71,16 @@ header {
   border-image-slice: 1;
 }
 
-.card:nth-child(4) {
+.card:nth-child(5) {
   border-top: 5px solid #c4032a;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .social-followers {
@@ -102,6 +113,7 @@ header {
 }
 
 h2 {
+  margin: 0 15px;
   color: #63687e;
   text-align: left;
   color: black;
@@ -120,12 +132,26 @@ h3 {
   font-weight: 700;
 }
 
+.toggle-label {
+  position: absolute;
+  right: 220px;
+  top: 80px;
+}
+
+.dark-mode {
+  position: relative;
+  font-size: 20px;
+  top: 10px;
+  margin-right: 20px;
+}
+
 .switch {
   position: absolute;
-  right: 0;
-  top: 18px;
-  width: 60px;
-  height: 34px;
+  right: 150px;
+  top: 80px;
+  display: inline-block;
+  width: 56px;
+  height: 26px;
 }
 
 .switch input {
@@ -142,7 +168,8 @@ h3 {
   right: 0;
   bottom: 0;
   border-radius: 34px;
-  background: #aeb3cb;
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(to right, #378fe6, #3eda82);
   -webkit-transition: .6s;
   transition: .6s;
 }
@@ -151,23 +178,19 @@ h3 {
   border-radius: 50%;
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
+  height: 20px;
+  width: 20px;
+  left: 5px;
   bottom: 4px;
-  background-color: white;
+  background-color: #1e202a;
   -webkit-transition: .6s;
   transition: .6s;
-}
-
-input:checked + .slider {
-  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
-  background: linear-gradient(to right, #378fe6, #3eda82);
 }
 
 input:checked + .slider::before {
   -webkit-transform: translateX(26px);
   transform: translateX(26px);
+  background-color: #aeb3cb;
 }
 
 input:focus + .slider {
@@ -175,28 +198,37 @@ input:focus + .slider {
           box-shadow: 0 0 1px #2196F3;
 }
 
-.dark-mode {
-  position: relative;
-  font-size: 20px;
-  top: 10px;
-  margin-right: 20px;
-}
-
-.card-container__dark {
+.container__dark {
   background: #1e202a;
 }
 
-.card-container__dark .card {
+.container__dark .card {
   background: #252a41;
 }
 
-.card-container__dark .social-follower-number {
+.container__dark .social-follower-number {
   color: white;
 }
 
-.card-container__dark h2,
-.card-container__dark h3,
-.card-container__dark .social-count {
+.container__dark h1,
+.container__dark h2,
+.container__dark h3,
+.container__dark p,
+.container__dark .social-count {
   color: white;
+}
+
+.icon {
+  display: none;
+  position: relative;
+  top: -2px;
+}
+
+.social-update__positive .icon__up {
+  display: inline-block;
+}
+
+.social-update__negative .icon__down {
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

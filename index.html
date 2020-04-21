@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -11,36 +11,49 @@
 
 </head>
 <body>
-  
+  <div class="container">
   <header>
     <h1>Social Media Dashboard</h1>
-    <span>Total Followers: 23,004</span>
+    <p>Total Followers: 23,004</p>
+    <span class="toggle-label">Dark mode</span>
     <label class="switch">
       <input type="checkbox" checked onclick="themefunction()">
       <span class="slider"></span>
     </label>
   </header>
 
-  <div class="card-container">
+ 
       <div class="card card1">
         <p class="social-handle"><img class="social-icon" src="images/icon-facebook.svg" alt="facebook icon">@JonnyJH</p>
         <p class="social-followers"><span class="social-follower-number">1987</span>Followers</p>
-        <p class="social-update">12 Today</p>
+        <p class="social-update">12 Today
+          <img class="icon icon__up" src="images/icon-up.svg" alt="icon up">
+          <img class="icon icon__down" src="images/icon-down.svg" alt="icon down">
+          </p>
       </div>
       <div class="card card2">
           <p class="social-handle"><img class="social-icon" src="images/icon-twitter.svg" alt="twitter icon">@JonnyJH</p>
           <p class="social-followers"><span class="social-follower-number">1044</span>Followers</p>
-          <p class="social-update">99 Today</p>
+          <p class="social-update">99 Today
+          <img class="icon icon__up" src="images/icon-up.svg" alt="icon up">
+          <img class="icon icon__down" src="images/icon-down.svg" alt="icon down">
+          </p>
       </div>
       <div class="card card3">
           <p class="social-handle"><img class="social-icon" src="images/icon-instagram.svg" alt="icon-instagram icon">@JonnyJH</p>
           <p class="social-followers"><span class="social-follower-number">11k</span>Followers</p>
-          <p class="social-update">1099 Today</p>
+          <p class="social-update">1099 Today
+          <img class="icon icon__up" src="images/icon-up.svg" alt="icon up">
+          <img class="icon icon__down" src="images/icon-down.svg" alt="icon down">
+          </p>
       </div>
       <div class="card card4">        
         <p class="social-handle"><img class="social-icon" src="images/icon-youtube.svg" alt="youtube icon">@JonnyJH</p>
         <p class="social-followers"><span class="social-follower-number">1987</span>Followers</p>
-        <p class="social-update">12 Today</p>
+        <p class="social-update">12 Today
+          <img class="icon icon__up" src="images/icon-up.svg" alt="icon up">
+          <img class="icon icon__down" src="images/icon-down.svg" alt="icon down">
+          </p>
       </div>
 
       <h2>Overview - Today</h2>
@@ -49,49 +62,73 @@
         <h3>Page Views</h3>
         <img class="social-icon" src="images/icon-facebook.svg" alt="facebook icon">
         <p class="social-count">87</p>
-        <p class="social-update">3%</p>
+        <p class="social-update">3%
+          <img class="icon icon__up" src="images/icon-up.svg" alt="icon up">
+          <img class="icon icon__down" src="images/icon-down.svg" alt="icon down">
+          </p>
       </div>
       <div class="card card6">
         <h3>Likes</h3>
         <img class="social-icon" src="images/icon-facebook.svg" alt="facebook icon">
         <p class="social-count">52</p>
-        <p class="social-update">-2%</p>
+        <p class="social-update">-2%
+          <img class="icon icon__up" src="images/icon-up.svg" alt="icon up">
+          <img class="icon icon__down" src="images/icon-down.svg" alt="icon down">
+          </p>
       </div>
       <div class="card card7">
         <h3>Likes</h3>
         <img class="social-icon" src="images/icon-instagram.svg" alt="instagram icon">
         <p class="social-count">5462</p>
-        <p class="social-update">2257%</p>
+        <p class="social-update">2257%
+          <img class="icon icon__up" src="images/icon-up.svg" alt="icon up">
+          <img class="icon icon__down" src="images/icon-down.svg" alt="icon down">
+          </p>
       </div>
       <div class="card card8">
         <h3>Profle Views</h3>
         <img class="social-icon" src="images/icon-instagram.svg" alt="instagram icon">
         <p class="social-count">52k</p>
-        <p class="social-update">1375%</p>
+        <p class="social-update">1375%
+          <img class="icon icon__up" src="images/icon-up.svg" alt="icon up">
+          <img class="icon icon__down" src="images/icon-down.svg" alt="icon down">
+          </p>
       </div>
       <div class="card card9">
         <h3>Retweets</h3>
         <img class="social-icon" src="images/icon-twitter.svg" alt="twitter icon">
         <p class="social-count">117</p>
-        <p class="social-update">303%</p>
+        <p class="social-update">303%
+          <img class="icon icon__up" src="images/icon-up.svg" alt="icon up">
+          <img class="icon icon__down" src="images/icon-down.svg" alt="icon down">
+          </p>
       </div>
       <div class="card card10">
         <h3>Likes</h3>
         <img class="social-icon" src="images/icon-twitter.svg" alt="twitter icon">
         <p class="social-count">507</p>
-        <p class="social-update">553%</p>
+        <p class="social-update">553%
+          <img class="icon icon__up" src="images/icon-up.svg" alt="icon up">
+          <img class="icon icon__down" src="images/icon-down.svg" alt="icon down">
+          </p>
       </div>
       <div class="card card11">
         <h3>Likes</h3>
         <img class="social-icon" src="images/icon-youtube.svg" alt="youtube icon">
         <p class="social-count">107</p>
-        <p class="social-update">-19%</p>
+        <p class="social-update">-19%
+          <img class="icon icon__up" src="images/icon-up.svg" alt="icon up">
+          <img class="icon icon__down" src="images/icon-down.svg" alt="icon down">
+          </p>
       </div>
       <div class="card card12">
         <h3>Total Views</h3>
         <img class="social-icon" src="images/icon-youtube.svg" alt="youtube icon">
         <p class="social-count">1407</p>
-        <p class="social-update">-12%</p>
+        <p class="social-update">-12%
+          <img class="icon icon__up" src="images/icon-up.svg" alt="icon up">
+          <img class="icon icon__down" src="images/icon-down.svg" alt="icon down">
+          </p>
       </div>
   </div>
   
@@ -99,7 +136,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Jonny Hunter/a>.
+    Coded by <a href="#">Jonny Hunter</a>.
   </div>
   <script src="js/script.js"></script>
 </body>
