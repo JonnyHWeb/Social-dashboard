@@ -19,10 +19,12 @@ var numbers= document.querySelectorAll('.social-update');
 for (i = 0; i < numbers.length; ++i) {
   
   var a = numbers[i].textContent;
+  a = a.trim();
   if(a.charAt(0)=='-'){
     numbers[i].style.color = "red";
     a = a.substring(1);
-    numbers[i].firstChild.data = a;
+    console.log(a);
+    numbers[i].childNodes[4].textContent= a;
     numbers[i].classList.add("social-update__negative");
   } 
   else if (a.charAt(0)=='0') {
