@@ -29,7 +29,7 @@ for (i = 0; i < numbers.length; ++i) {
      numbers[i].style.color = "black";
    }
     else {
-      numbers[i].style.color = "green";
+      numbers[i].style.color = "hsl(163, 72%, 41%)";
       numbers[i].classList.add("social-update__positive");
     }
   }
