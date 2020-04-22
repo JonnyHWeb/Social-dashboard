@@ -36,6 +36,14 @@ header {
   font-weight: 400;
   float: left;
   padding: 50px 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5f7ff), color-stop(30%), color-stop(30%, white));
+  background: linear-gradient(#f5f7ff, 30%, white 30% 100%);
+}
+
+@media (max-width: 1000px) {
+  .dashboard {
+    background: white;
+  }
 }
 
 .card {
@@ -271,7 +279,14 @@ input:focus + .slider {
 }
 
 .dashboard__dark {
-  background: #1e202a;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1f212e), color-stop(30%), color-stop(30%, #1e202a));
+  background: linear-gradient(#1f212e, 30%, #1e202a 30% 100%);
+}
+
+@media (max-width: 1000px) {
+  .dashboard__dark {
+    background: #1e202a;
+  }
 }
 
 .dashboard__dark .card {
