@@ -83,11 +83,20 @@ header {
 }
 
 .card:nth-child(4) {
-  border-top: 5px solid transparent;
-  -o-border-image: linear-gradient(to right, #fdc468, #df4996);
-     border-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
-     border-image: linear-gradient(to right, #fdc468, #df4996);
-  border-image-slice: 1;
+  height: 175px !important;
+}
+
+.card:nth-child(4)::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(to right, #fdc468, #df4996);
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  top: 0;
+  left: 0;
 }
 
 .card:nth-child(5) {
@@ -275,6 +284,7 @@ input:focus + .slider {
 
 .dashboard__dark h1,
 .dashboard__dark h2,
+.dashboard__dark .attribution,
 .dashboard__dark .social-count {
   color: white;
 }
@@ -291,5 +301,9 @@ input:focus + .slider {
 
 .social-update__negative .icon__down {
   display: inline-block;
+}
+
+.attribution {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
