@@ -245,6 +245,7 @@ header {
   }
   h1,
   h2,
+  .attribution,
   .social-count {
     color: white;
   }
@@ -268,3 +269,6 @@ header {
   }
 }
 
+.attribution {
+  color: black;
+}

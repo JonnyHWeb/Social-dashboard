@@ -275,6 +275,7 @@ input:focus + .slider {
 
 .dashboard__dark h1,
 .dashboard__dark h2,
+.dashboard__dark .attribution,
 .dashboard__dark .social-count {
   color: white;
 }
@@ -291,5 +292,9 @@ input:focus + .slider {
 
 .social-update__negative .icon__down {
   display: inline-block;
+}
+
+.attribution {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
