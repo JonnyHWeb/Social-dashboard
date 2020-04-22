@@ -82,12 +82,17 @@ header {
   border-top: 5px solid #1ca0f2;
 }
 
-.card:nth-child(4) {
-  border-top: 5px solid transparent;
-  -o-border-image: linear-gradient(to right, #fdc468, #df4996);
-     border-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
-     border-image: linear-gradient(to right, #fdc468, #df4996);
-  border-image-slice: 1;
+.card:nth-child(4)::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(to right, #fdc468, #df4996);
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  top: 0;
+  left: 0;
 }
 
 .card:nth-child(5) {
