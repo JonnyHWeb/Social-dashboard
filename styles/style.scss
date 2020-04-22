@@ -28,6 +28,11 @@ header {
   font-weight: 400;
   float: left;
   padding: 50px 100px; 
+  background: linear-gradient(hsl(225, 100%, 98%), 30%,  white 30% 100%);
+  @media (max-width: $screen-lg){
+    background: white;
+  }
+
   }
   .card {
     position: relative;
@@ -242,7 +247,11 @@ header {
 
   
 .dashboard__dark {
-  background: $dark-blue;
+  background: linear-gradient(hsl(232, 19%, 15%), 30%, $dark-blue 30% 100%);
+  @media (max-width: $screen-lg){
+    background: $dark-blue;
+  }
+  
   .card {
     background: $desaturated-blue;
   }
@@ -258,7 +267,7 @@ header {
   .social-count {
     color: white;
   }
-
+  
 }
 .icon {
   display: none;
