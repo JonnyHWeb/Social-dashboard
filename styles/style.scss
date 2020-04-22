@@ -70,6 +70,7 @@ header {
         border-top: 5px solid $colour-twitter;
     }
     &:nth-child(4) {
+      height: 175px !important;
       &::before {
         position: absolute;
         content: "";
