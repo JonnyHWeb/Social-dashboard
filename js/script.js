@@ -4,9 +4,9 @@ socialUpdater();
 //Toggle the theme between dark/light
 function themefunction() {
 
-  var element = document.querySelectorAll(".container");
+  var element = document.querySelectorAll(".dashboard");
   for (i = 0; i < element.length; ++i) {
-    element[i].classList.toggle("container__dark");
+    element[i].classList.toggle("dashboard__dark");
   }
 }
 

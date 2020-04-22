@@ -5,7 +5,26 @@ header {
   margin: 0 15px;
 }
 
-.container {
+@media (max-width: 1000px) {
+  .dashboard__title {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.dashboard__lead {
+  color: #63687e;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .dashboard__lead {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+}
+
+.dashboard {
   position: relative;
   font-size: 16px;
   display: -webkit-box;
@@ -138,10 +157,41 @@ h3 {
   margin-left: 15px;
 }
 
+.toggle {
+  font-weight: 600;
+  margin-top: 23px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1000px) {
+  .toggle {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+  }
+  .toggle::before {
+    position: absolute;
+    content: "";
+    width: 105%;
+    height: 1px;
+    background: #63687e;
+    top: -10px;
+  }
+}
+
 .toggle-label {
   position: absolute;
   right: 220px;
   top: 80px;
+  color: #63687e;
+}
+
+@media (max-width: 1000px) {
+  .toggle-label {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
 }
 
 .dark-mode {
@@ -158,6 +208,13 @@ h3 {
   display: inline-block;
   width: 56px;
   height: 26px;
+}
+
+@media (max-width: 1000px) {
+  .switch {
+    top: 0;
+    right: -16px;
+  }
 }
 
 .switch input {
@@ -204,21 +261,21 @@ input:focus + .slider {
           box-shadow: 0 0 1px #2196F3;
 }
 
-.container__dark {
+.dashboard__dark {
   background: #1e202a;
 }
 
-.container__dark .card {
+.dashboard__dark .card {
   background: #252a41;
 }
 
-.container__dark .social-follower-number {
+.dashboard__dark .social-follower-number {
   color: white;
 }
 
-.container__dark h1,
-.container__dark h2,
-.container__dark .social-count {
+.dashboard__dark h1,
+.dashboard__dark h2,
+.dashboard__dark .social-count {
   color: white;
 }
 

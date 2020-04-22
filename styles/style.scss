@@ -4,8 +4,22 @@ header {
   flex: 0 0 100%;
   margin: 0 15px;
 }
+.dashboard__title {
+  @media (max-width: $screen-lg){
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
 
-.container {
+.dashboard__lead {
+  color: $dark-grey-blue;
+  font-weight: 600;
+  @media (max-width: $screen-lg){
+    font-size: 14px;
+    margin: 4px 0;
+  }
+}
+.dashboard {
   position: relative;
   font-size: 16px;
   display: flex;
@@ -115,16 +129,44 @@ header {
   }
 
   //slider toggle
+  .toggle {
+    font-weight: 600;
+    margin-top: 23px;
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-lg){
+      position: relative;
+      width: 100%;
+      font-size: 14px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 105%;
+        height: 1px;
+        background: $dark-grey-blue;
+        top: -10px;
+      }
+    }
+  }
   .toggle-label {
     position: absolute;
     right: 220px;
     top: 80px;
+    color: $dark-grey-blue;
+
+    @media (max-width: $screen-lg){
+      position: relative;
+      right: 0;
+      top: 0;
+    }
   }
   .dark-mode {
     position: relative;
     font-size: 20px;
     top: 10px;
     margin-right: 20px;
+
+
   }
   .switch {
     position: absolute;
@@ -133,6 +175,11 @@ header {
     display: inline-block;
     width: 56px;
     height: 26px;
+
+    @media (max-width: $screen-lg){
+      top: 0;
+      right: -16px;
+    }
   }
   
   .switch input { 
@@ -185,7 +232,7 @@ header {
 
 
   
-.container__dark {
+.dashboard__dark {
   background: $dark-blue;
   .card {
     background: $desaturated-blue;
